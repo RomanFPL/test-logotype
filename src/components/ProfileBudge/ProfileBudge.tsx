@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./ProfileBudge.module.css";
 
-interface ProfileBudgeProps {
+export interface ProfileBudgeProps {
   firstName: string;
   role: string;
   imgUrl: string;

@@ -9,13 +9,18 @@ import navigation from "config/navigation/index";
 const AuthenticatedLayout: React.FC<React.PropsWithChildren> = ({
   children,
 }) => {
+  const user = {
+    firstName: "Peter",
+    role: "admin",
+    imgUrl: "",
+  };
   return (
     <div className={styles.wrapper}>
       <div className={styles.navigationWrapper}>
         <SidebarMenu items={navigation} />
       </div>
       <div className={styles.appBarWrapper}>
-        <AppBar />
+        <AppBar user={user} />
       </div>
       <div className={styles.content}>{children}</div>
     </div>

@@ -7,16 +7,18 @@ import IconButton from "../IconButton/IconButton";
 import { ReactComponent as Notification } from "assets/icons/bell.svg";
 import Select from "../Select/Select";
 import { languages } from "../../config/types/index";
-import ProfileBudge from "../ProfileBudge/ProfileBudge";
+import ProfileBudge, { ProfileBudgeProps } from "../ProfileBudge/ProfileBudge";
 
-interface AppBarProps {}
+interface AppBarProps {
+  user: ProfileBudgeProps;
+}
 
 type FormData = {
   search: string;
   language: string;
 };
 
-const AppBar: FC<AppBarProps> = () => {
+const AppBar: FC<AppBarProps> = ({ user }) => {
   const { control } = useForm<FormData>({
     defaultValues: {
       search: "",
@@ -37,11 +39,7 @@ const AppBar: FC<AppBarProps> = () => {
             <Notification />
           </IconButton>
         </div>
-        <ProfileBudge
-          firstName="Peter"
-          role="Admin"
-          imgUrl="https://media.istockphoto.com/id/1200677760/photo/portrait-of-handsome-smiling-young-man-with-crossed-arms.jpg?s=612x612&w=0&k=20&c=g_ZmKDpK9VEEzWw4vJ6O577ENGLTOcrvYeiLxi8mVuo="
-        />
+        <ProfileBudge {...user} />
       </div>
     </div>
   );

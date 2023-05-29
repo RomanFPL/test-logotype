@@ -34,8 +34,10 @@
     gap: 4px;
     color: var(--title-color);
     font-weight: 500;
+    text-transform: capitalize;
 }
 
 .role {
     color: var(--text-color);
+    font-size: 12px;
 }
