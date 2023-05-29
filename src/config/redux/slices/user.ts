@@ -1,10 +1,13 @@
 import { createSlice } from "@reduxjs/toolkit";
 
-interface IUser {
+export interface IUser {
   id: number;
   firstName: string;
   secondName: string;
   level: number;
+  role: string;
+  imgUrl: string;
+  language: string;
 }
 
 const initialState: IUser = {} as IUser;
