@@ -1,7 +1,9 @@
 import React from 'react';
 import styles from './TemplateName.module.css';
 
-const TemplateName: React.FC = () => {
+interface TemplateNameProps {}
+
+const TemplateName: React.FC<TemplateNameProps> = () => {
     return <div className={styles.container}></div>;
 };
 

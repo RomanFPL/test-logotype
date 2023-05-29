@@ -6,9 +6,9 @@
   "component": {
     "default": {
       "customTemplates": {
-        "component": "src/templates/component/TemplateName.tsx",
-        "style": "src/templates/component/TemplateName.module.css",
-        "index": "src/templates/component/index.ts"
+        "component": "templates/component/TemplateName.tsx",
+        "style": "templates/component/TemplateName.module.css",
+        "index": "templates/component/index.ts"
       },
       "path": "src/components",
       "withStyle": true,
