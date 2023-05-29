@@ -13,4 +13,10 @@
 
 .profileBlock {
     display: flex;
+    gap: 34px;
+}
+
+.userPanel {
+    display: flex;
+    gap: 8px
 }
