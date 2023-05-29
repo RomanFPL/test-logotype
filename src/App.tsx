@@ -1,11 +1,16 @@
-import React from 'react';
-import { BrowserRouter as Router } from 'react-router-dom';
-import './App.css';
+import React from "react";
+import "./App.css";
+import Root from "./Root";
+import { BrowserRouter } from "react-router-dom";
 
 function App() {
   return (
-    // TODO add providers here 
-    <Router/>
+    // TODO add providers here
+    <>
+      <BrowserRouter>
+        <Root />
+      </BrowserRouter>
+    </>
   );
 }
 

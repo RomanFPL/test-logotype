@@ -1,5 +1,5 @@
-import React, { FC } from 'react';
-import styles from './AppBar.module.css';
+import React, { FC } from "react";
+import styles from "./AppBar.module.css";
 
 interface AppBarProps {}
 
@@ -13,7 +13,7 @@ const AppBar: FC<AppBarProps> = () => (
     </select>
     <button>Notification</button>
     <div className={styles.profileBlock}>
-      <img src="" alt="Profile Image"/>
+      <img src="" alt="Profile Image" />
       <span>Username</span>
     </div>
   </div>

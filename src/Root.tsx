@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter, Route } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 import AuthenticatedLayout from "./layouts/AuthenticatedLayout";
 
 const Root: React.FC = () => {
@@ -9,17 +9,15 @@ const Root: React.FC = () => {
   if (isLogged) {
     return (
       <AuthenticatedLayout>
-        <BrowserRouter>
-          <Route path="/" element={<></>} />
-        </BrowserRouter>
+        <Routes>
+          <Route path="/" element={<>Our page</>} />
+        </Routes>
       </AuthenticatedLayout>
     );
   }
 
   // TODO add GuestLayout
-  return (
-    <></>
-  );
+  return <></>;
 };
 
 export default Root;
