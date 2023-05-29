@@ -1,0 +1,38 @@
+.inputContainer {
+    background: var(--background);
+    position: relative;
+    display: inline-block;
+    border-radius: 10px;
+    width: 100%;
+}
+
+.inputContainer input {
+    width: 100%;
+    padding: 12px;
+    padding-left: 56px;
+    font-size: 16px;
+    border: none;
+    color: var(--text-color);
+
+    /* Remove default outline */
+    outline: none;
+
+    /* Remove default background color */
+    background: none;
+
+    /* Remove default font styles */
+    font-family: inherit;
+    font-weight: inherit;
+    font-style: inherit;
+    line-height: inherit;
+}
+
+.inputContainer label {
+    cursor: text;
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 14px;
+    color: #ccc;
+}

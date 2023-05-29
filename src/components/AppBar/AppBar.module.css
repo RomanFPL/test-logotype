@@ -1,1 +1,14 @@
-.AppBar {}
+.AppBar {
+    padding: 10px 24px;
+    display: flex;
+    justify-content: space-between;
+    height: 68px;
+    background: var(--paper-background);
+}
+
+.searchBlock {
+    width: 380px;
+}
+
+
+.profileBlock {}

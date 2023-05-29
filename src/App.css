@@ -7,3 +7,7 @@ html {
   --active-background: #7789EA;
 
 }
+
+body {
+  background: var(--background);
+}

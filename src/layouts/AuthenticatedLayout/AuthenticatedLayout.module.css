@@ -4,4 +4,22 @@
     height: 100%;
     position: absolute;
     display: flex;
+    display: grid;
+    grid-template-columns: 237px 1fr;
+    grid-template-rows: 64px 1fr;
+}
+
+.navigationWrapper {
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.appBarWrapper {
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.content {
+    background: var(--background);
+    padding: 32px;
 }
