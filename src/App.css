@@ -1,7 +1,9 @@
 html {
-  --title-color: #fff;
+  --title-color: #ffffff;
   --text-color: #939495;
 
   --background: #212224;
   --paper-background: #28292B;
+  --active-background: #7789EA;
+
 }
