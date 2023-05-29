@@ -2,6 +2,9 @@ import React, { FC } from "react";
 import styles from "./AppBar.module.css";
 import InputSearch from "../InputSearch/InputSearch";
 import { useForm } from "react-hook-form";
+import IconButton from "../IconButton/IconButton";
+
+import { ReactComponent as Notification } from "assets/icons/bell.svg";
 
 interface AppBarProps {}
 
@@ -28,7 +31,9 @@ const AppBar: FC<AppBarProps> = () => {
           <option value="Spanish">Spanish</option>
           <option value="German">German</option>
         </select>
-        <button>Notification</button>
+        <IconButton>
+          <Notification />
+        </IconButton>
         <div className={styles.profileBlock}>
           <img src="" alt="Profile Image" />
           <span>Username</span>
