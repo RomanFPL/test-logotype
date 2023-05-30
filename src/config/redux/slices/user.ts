@@ -5,6 +5,7 @@ export interface IUser {
   firstName: string;
   secondName: string;
   level: number;
+  progress: number;
   role: string;
   imgUrl: string;
   language: string;
@@ -12,21 +13,18 @@ export interface IUser {
 
 const initialState: IUser = {} as IUser;
 
-const notifications = createSlice({
+const user = createSlice({
   name: "user",
   initialState,
   reducers: {
     setUser: (state, action) => ({
       ...state,
-      user: action.payload,
+      ...action.payload,
     }),
-    removeUser: (state, action) => ({
-      ...state,
-      user: initialState,
-    }),
+    removeUser: (state, action) => initialState,
   },
 });
 
-export default notifications.reducer;
+export default user.reducer;
 
-export const { setUser } = notifications.actions;
+export const { setUser } = user.actions;

@@ -2,10 +2,14 @@ import React from "react";
 import { Route, Routes } from "react-router-dom";
 import AuthenticatedLayout from "./layouts/AuthenticatedLayout";
 import HomePage from "./pages/HomePage/HomePage";
+import useUserData from "./queries/index";
 
 const Root: React.FC = () => {
   // TODO add user verification
   const isLogged = true;
+  const { isLoading } = useUserData();
+
+  if (isLoading) return <>Loading...</>;
 
   if (isLogged) {
     return (

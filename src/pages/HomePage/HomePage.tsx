@@ -1,8 +1,6 @@
 import React from "react";
 import styles from "./HomePage.module.css";
 import Paper from "components/Paper/Paper";
-import { useSelector } from "react-redux";
-import { getUser } from "config/redux/slectors";
 import IntroCard from "./components/IntroCard/IntroCard";
 import PlanetSlider from "./components/PlanetSlider/PlanetSlider";
 import AchievementItem from "./components/AchievementItem/AchievementItem";
@@ -10,6 +8,7 @@ import AdditionItem from "./components/AdditionItem/AdditionItem";
 
 import abs2 from "assets/images/abs2.png";
 import abs1 from "assets/images/abs1.png";
+import useUserData from "../../queries/index";
 
 interface HomePageProps {}
 
@@ -31,11 +30,10 @@ const imgs = [
 const level = 4;
 
 const HomePage: React.FC<HomePageProps> = () => {
-  const { firstName } = useSelector(getUser);
   return (
     <div className={styles.container}>
       <Paper className={styles.progressBlock}>
-        <IntroCard name={firstName} progress={{ value: 40, level }} />
+        <IntroCard />
       </Paper>
       <Paper className={styles.animatedProgressBlock}>
         <PlanetSlider value={40} level={level} />

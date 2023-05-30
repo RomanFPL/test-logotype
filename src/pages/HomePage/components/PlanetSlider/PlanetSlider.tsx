@@ -24,7 +24,7 @@ const PlanetSlider: React.FC<PlanetSliderProps> = ({ value, level }) => {
           {PlanetMap.map((Planet, idx) => {
             if (level - 1 === idx)
               return (
-                <div className={styles.planetWrapper}>
+                <div key={idx} className={styles.planetWrapper}>
                   <Character className={styles.character} />
                   <ProgressBar size={130} value={value} isDot>
                     <Planet />
@@ -32,7 +32,7 @@ const PlanetSlider: React.FC<PlanetSliderProps> = ({ value, level }) => {
                 </div>
               );
             return (
-              <div className={styles.planetWrapper}>
+              <div key={idx} className={styles.planetWrapper}>
                 <Planet />
               </div>
             );

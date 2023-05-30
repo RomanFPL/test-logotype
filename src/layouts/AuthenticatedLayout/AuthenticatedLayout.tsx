@@ -5,7 +5,7 @@ import SidebarMenu from "components/SidebarMenu/SidebarMenu";
 import AppBar from "components/AppBar/AppBar";
 
 import navigation from "config/navigation/index";
-import { getUser } from "../../config/redux/slectors/index";
+import { getUser } from "../../config/redux/selctors/index";
 import { useSelector } from "react-redux";
 
 const AuthenticatedLayout: React.FC<React.PropsWithChildren> = ({

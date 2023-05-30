@@ -40,7 +40,7 @@ const AdditionItem: React.FC<AdditionItemProps> = ({
       </div>
       <div className={styles.imagesPanel}>
         {previewImages.map((src, idx) => (
-          <div className={styles.imageWrapper}>
+          <div key={src + idx} className={styles.imageWrapper}>
             {idx === 2 && !!moreImages && (
               <div className={styles.more}>+{moreImages}</div>
             )}

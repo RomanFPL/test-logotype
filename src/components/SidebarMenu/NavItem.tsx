@@ -14,8 +14,6 @@ export interface NavItemProps {
 const NavItem: React.FC<NavItemProps> = ({ icon, title, root, type }) => {
   const { pathname } = useLocation();
 
-  console.log(pathname, root);
-
   const isActive = pathname === root;
 
   if (type === "divider") {
