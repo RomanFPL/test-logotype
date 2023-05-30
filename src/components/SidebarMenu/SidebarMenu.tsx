@@ -3,7 +3,6 @@ import styles from "./SidebarMenu.module.css";
 import { ReactComponent as LogoIcon } from "assets/icons/logo.svg";
 import { Link } from "react-router-dom";
 import NavItem, { NavItemProps } from "./NavItem";
-import { ReactComponent as HomeIcon } from "assets/icons/home.svg";
 
 interface SidebarMenuProps {
   items: NavItemProps[];

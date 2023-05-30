@@ -16,10 +16,13 @@ const Select: React.FC<SelectProps> = ({
   rules,
   shouldUnregister,
 }) => {
-  const {
-    field,
-    fieldState: { error },
-  } = useController({ name, control, defaultValue, rules, shouldUnregister });
+  const { field } = useController({
+    name,
+    control,
+    defaultValue,
+    rules,
+    shouldUnregister,
+  });
 
   return (
     <div className={styles.customSelect}>

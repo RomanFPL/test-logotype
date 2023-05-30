@@ -13,10 +13,13 @@ const InputSearch: React.FC<InputSearchProps> = ({
   rules,
   shouldUnregister,
 }) => {
-  const {
-    field,
-    fieldState: { error },
-  } = useController({ name, control, defaultValue, rules, shouldUnregister });
+  const { field } = useController({
+    name,
+    control,
+    defaultValue,
+    rules,
+    shouldUnregister,
+  });
   //   TODO add error handling
   return (
     <div className={styles.inputContainer}>
