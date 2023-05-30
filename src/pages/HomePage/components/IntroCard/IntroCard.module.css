@@ -25,3 +25,9 @@
     height: 200px;
     width: 200px;
 }
+
+.progressText {
+    margin-top: 28px;
+    font-size: 16px;
+    color: var(--text-color);
+}
