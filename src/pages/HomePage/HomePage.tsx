@@ -1,13 +1,32 @@
 import React from "react";
 import styles from "./HomePage.module.css";
-import Paper from "../../components/Paper/Paper";
+import Paper from "components/Paper/Paper";
 import { useSelector } from "react-redux";
-import { getUser } from "config/redux/slectors/index";
+import { getUser } from "config/redux/slectors";
 import IntroCard from "./components/IntroCard/IntroCard";
 import PlanetSlider from "./components/PlanetSlider/PlanetSlider";
 import AchievementItem from "./components/AchievementItem/AchievementItem";
+import AdditionItem from "./components/AdditionItem/AdditionItem";
+
+import abs2 from "assets/images/abs2.png";
+import abs1 from "assets/images/abs1.png";
 
 interface HomePageProps {}
+
+const imgs = [
+  abs2,
+  abs1,
+  abs1,
+  abs2,
+  abs2,
+  abs1,
+  abs1,
+  abs2,
+  abs2,
+  abs1,
+  abs1,
+  abs2,
+];
 
 const level = 4;
 
@@ -45,9 +64,15 @@ const HomePage: React.FC<HomePageProps> = () => {
           total={15}
         />
       </Paper>
-      <Paper className={styles.additionBlock}></Paper>
-      <Paper className={styles.additionBlock}></Paper>
-      <Paper className={styles.additionBlock}></Paper>
+      <Paper className={styles.additionBlock}>
+        <AdditionItem images={imgs} users={122} pages={12} />
+      </Paper>
+      <Paper className={styles.additionBlock}>
+        <AdditionItem images={imgs} users={122} pages={12} />
+      </Paper>
+      <Paper className={styles.additionBlock}>
+        <AdditionItem images={imgs} users={122} pages={12} />
+      </Paper>
     </div>
   );
 };

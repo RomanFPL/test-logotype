@@ -1,7 +1,7 @@
 import { MenuTypes } from "../constants/index";
 
 import { ReactComponent as HomeIcon } from "assets/icons/home.svg";
-import { ReactComponent as CoursesIcon } from "assets/icons/coureses.svg";
+import { ReactComponent as CoursesIcon } from "assets/icons/courses.svg";
 import { ReactComponent as LibrariesIcon } from "assets/icons/libraries.svg";
 import { ReactComponent as StatisticsIcon } from "assets/icons/statistics.svg";
 import { ReactComponent as UsersGuidelineIcon } from "assets/icons/guideLine.svg";

@@ -1,0 +1,72 @@
+.container {
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.actionPanel,
+.counterPanel,
+.imagesPanel {
+    display: flex;
+    justify-content: space-between;
+}
+
+.actionName {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+}
+
+.actionName h3 {
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--title-color);
+}
+
+.iconButton,
+.menuIcon {
+    height: 32px;
+    width: 32px;
+}
+
+.iconButton {
+    background-color: var(--filled-background);
+}
+
+.counterPanel {
+    height: 40px;
+    background-color: var(--filled-background);
+    border-radius: 5px;
+    padding: 12px;
+}
+
+.imagesPanel {
+    gap: 8px;
+}
+
+.imageWrapper {
+    position: relative;
+    border-radius: 5px;
+    height: auto;
+    width: 100%;
+}
+
+.imageWrapper:last-child .images {
+    filter: brightness(0.4);
+}
+
+.images {
+    height: 100%;
+    width: 100%;
+}
+
+.more {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    font-size: 14px;
+    color: var(--title-color);
+    z-index: 1;
+}
