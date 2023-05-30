@@ -20,7 +20,7 @@ const PlanetProgress: React.FC<PlanetProgressProps> = ({
         <Planet level={level} />
         <div className={styles.progress}>
           <span>{level}</span>
-          <GlassLabel />
+          <GlassLabel text="level" />
         </div>
       </ProgressBar>
     </div>

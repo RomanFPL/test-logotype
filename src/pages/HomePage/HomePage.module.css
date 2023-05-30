@@ -13,6 +13,7 @@
 }
 
 div.animatedProgressBlock {
+    position: relative;
     grid-column: 4 / 13;
     grid-row: 1 / 4;
     background-image: url('../../assets/planets/background.svg');

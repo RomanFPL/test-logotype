@@ -1,0 +1,12 @@
+.glassWrapper {
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.text {
+    font-weight: 700;
+    font-size: 18px;
+    padding: 12px 24px;
+}
