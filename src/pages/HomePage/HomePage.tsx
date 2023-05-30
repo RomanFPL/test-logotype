@@ -12,7 +12,7 @@ const HomePage: React.FC<HomePageProps> = () => {
   return (
     <div className={styles.container}>
       <Paper className={styles.progressBlock}>
-        <IntroCard name={firstName} progress={{ value: 40, level: 1 }} />
+        <IntroCard name={firstName} progress={{ value: 40, level: 5 }} />
       </Paper>
       <Paper className={styles.animatedProgressBlock}></Paper>
       <Paper className={styles.miniBlock}></Paper>
