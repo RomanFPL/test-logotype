@@ -12,22 +12,16 @@
     grid-row: 1 / 5;
 }
 
-.animatedProgressBlock {
+div.animatedProgressBlock {
     grid-column: 4 / 13;
     grid-row: 1 / 4;
+    background-image: url('../../assets/planets/background.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+
 }
 
-.coursesBlock {
-    grid-column: span 3;
-    grid-row: 4 / 5;
-}
-
-.folderBlock {
-    grid-column: span 3;
-    grid-row: 4 / 5;
-}
-
-.booksBlock {
+.miniBlock {
     grid-column: span 3;
     grid-row: 4 / 5;
 }

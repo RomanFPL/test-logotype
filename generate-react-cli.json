@@ -10,7 +10,7 @@
         "style": "templates/component/TemplateName.module.css",
         "index": "templates/component/index.ts"
       },
-      "path": "src/components",
+      "path": "src/pages/HomePage/components",
       "withStyle": true,
       "withTest": false,
       "withStory": false,
