@@ -1,4 +1,4 @@
-import { MenuTypes } from "../../config/types/index";
+import { MenuTypes } from "../constants/index";
 
 import { ReactComponent as HomeIcon } from "assets/icons/home.svg";
 import { ReactComponent as CoursesIcon } from "assets/icons/coureses.svg";

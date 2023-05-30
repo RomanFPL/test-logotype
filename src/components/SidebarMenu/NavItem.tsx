@@ -2,7 +2,7 @@ import React, { ReactNode } from "react";
 import styles from "./SidebarMenu.module.css";
 import cn from "classnames";
 import { Link, useLocation } from "react-router-dom";
-import { MenuTypes } from "../../config/types/index";
+import { MenuTypes } from "../../config/constants/index";
 
 export interface NavItemProps {
   icon?: ReactNode;

@@ -17,7 +17,11 @@ const IntroCard: React.FC<IntroCardProps> = ({ name, progress }) => {
       <h2>Hey, {name} 👋 </h2>
       <p>Here’s complex overview of your progress</p>
       <div className={styles.planetWrapper}>
-        <PlanetProgress progressValue={progress.value} level={progress.level} />
+        <PlanetProgress
+          progressValue={progress.value}
+          level={progress.level}
+          isLabel
+        />
       </div>
       <p className={styles.progressText}>{leftTotReach}</p>
     </div>

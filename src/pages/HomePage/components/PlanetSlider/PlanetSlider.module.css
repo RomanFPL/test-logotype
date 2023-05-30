@@ -1,3 +1,27 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.planetSlider {
+    overflow: hidden;
+    width: 100%;
+}
+
+.planetList {
+    display: flex;
+    gap: 42px;
+    padding: 0 30%;
+}
+
+.planetWrapper {
+    position: relative;
+    width: 130px;
+    height: 130px;
+}
+
 .glassWrapper {
     position: absolute;
     bottom: 5%;
@@ -9,4 +33,23 @@
     font-weight: 700;
     font-size: 18px;
     padding: 12px 24px;
+}
+
+.progressPlanet {
+    width: 130px;
+    height: 130px;
+}
+
+.progressPlanet svg {
+    transform: none;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.character {
+    position: absolute;
+    left: 35%;
+    top: -2%;
+    z-index: 9;
 }

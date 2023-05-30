@@ -6,7 +6,7 @@ import IconButton from "../IconButton/IconButton";
 
 import { ReactComponent as Notification } from "assets/icons/bell.svg";
 import Select from "../Select/Select";
-import { languages } from "../../config/types/index";
+import { languages } from "../../config/constants/index";
 import ProfileBudge, { ProfileBudgeProps } from "../ProfileBudge/ProfileBudge";
 
 interface AppBarProps {

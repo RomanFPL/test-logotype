@@ -8,15 +8,17 @@ import PlanetSlider from "./components/PlanetSlider/PlanetSlider";
 
 interface HomePageProps {}
 
+const level = 4;
+
 const HomePage: React.FC<HomePageProps> = () => {
   const { firstName } = useSelector(getUser);
   return (
     <div className={styles.container}>
       <Paper className={styles.progressBlock}>
-        <IntroCard name={firstName} progress={{ value: 40, level: 5 }} />
+        <IntroCard name={firstName} progress={{ value: 40, level }} />
       </Paper>
       <Paper className={styles.animatedProgressBlock}>
-        <PlanetSlider value={40} />
+        <PlanetSlider value={40} level={level} />
       </Paper>
       <Paper className={styles.miniBlock}></Paper>
       <Paper className={styles.miniBlock}></Paper>

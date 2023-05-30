@@ -1,20 +1,24 @@
 import React from "react";
 import styles from "./ProgressBar.module.css";
 
+import cn from "classnames";
+
 interface ProgressBarProps {
   value: number;
   isDot?: boolean;
+  containerClassName?: string;
 }
 
 const ProgressBar: React.FC<ProgressBarProps & React.PropsWithChildren> = ({
   value,
   isDot,
   children,
+  containerClassName,
 }) => {
   const rotation = (360 / 100) * value;
 
   return (
-    <div className={styles.wrapper}>
+    <div className={cn(styles.wrapper, containerClassName)}>
       <svg
         className={styles.svg}
         viewBox="0 0 100 100"
@@ -40,7 +44,7 @@ const ProgressBar: React.FC<ProgressBarProps & React.PropsWithChildren> = ({
       {children}
       {isDot && (
         <div
-          className={styles.dotWrapper}
+          className={cn(styles.dotWrapper, containerClassName)}
           style={{ transform: `rotate(${rotation}deg)` }}
         />
       )}

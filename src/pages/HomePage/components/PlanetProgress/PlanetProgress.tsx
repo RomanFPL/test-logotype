@@ -8,20 +8,24 @@ import Planet from "../Planet/Planet";
 interface PlanetProgressProps {
   progressValue: number;
   level: number;
+  isLabel?: boolean;
 }
 
 const PlanetProgress: React.FC<PlanetProgressProps> = ({
   progressValue,
   level,
+  isLabel,
 }) => {
   return (
     <div className={styles.container}>
       <ProgressBar value={progressValue} isDot>
         <Planet level={level} />
-        <div className={styles.progress}>
-          <span>{level}</span>
-          <GlassLabel text="level" />
-        </div>
+        {isLabel && (
+          <div className={styles.progress}>
+            <span>{level}</span>
+            <GlassLabel text="level" />
+          </div>
+        )}
       </ProgressBar>
     </div>
   );
