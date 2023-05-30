@@ -1,0 +1,41 @@
+.container {
+    padding: 16px 24px;
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.itemIcon {
+    display: block;
+    margin: auto;
+    height: 100%;
+    color: var(--title-color);
+}
+
+.textWrapper {
+    display: flex;
+    flex-direction: column;
+    color: var(--text-color);
+}
+
+.valueWrapper {
+    display: flex;
+    align-items: center;
+    gap: 4px
+}
+
+.current {
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--title-color);
+}
+
+.total {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.text {
+    font-size: 14px;
+    font-weight: 400;
+}

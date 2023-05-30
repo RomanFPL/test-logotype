@@ -5,6 +5,7 @@ import { useSelector } from "react-redux";
 import { getUser } from "config/redux/slectors/index";
 import IntroCard from "./components/IntroCard/IntroCard";
 import PlanetSlider from "./components/PlanetSlider/PlanetSlider";
+import AchievementItem from "./components/AchievementItem/AchievementItem";
 
 interface HomePageProps {}
 
@@ -20,9 +21,30 @@ const HomePage: React.FC<HomePageProps> = () => {
       <Paper className={styles.animatedProgressBlock}>
         <PlanetSlider value={40} level={level} />
       </Paper>
-      <Paper className={styles.miniBlock}></Paper>
-      <Paper className={styles.miniBlock}></Paper>
-      <Paper className={styles.miniBlock}></Paper>
+      <Paper className={styles.miniBlock}>
+        <AchievementItem
+          type="courses"
+          text="Courses completed"
+          currentValue={3}
+          total={15}
+        />
+      </Paper>
+      <Paper className={styles.miniBlock}>
+        <AchievementItem
+          type="folder"
+          text="Folders add"
+          currentValue={3}
+          total={15}
+        />
+      </Paper>
+      <Paper className={styles.miniBlock}>
+        <AchievementItem
+          type="book"
+          text="Books read"
+          currentValue={3}
+          total={15}
+        />
+      </Paper>
       <Paper className={styles.additionBlock}></Paper>
       <Paper className={styles.additionBlock}></Paper>
       <Paper className={styles.additionBlock}></Paper>

@@ -35,11 +35,6 @@
     padding: 12px 24px;
 }
 
-.progressPlanet {
-    width: 130px;
-    height: 130px;
-}
-
 .progressPlanet svg {
     transform: none;
     position: absolute;

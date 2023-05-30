@@ -26,11 +26,7 @@ const PlanetSlider: React.FC<PlanetSliderProps> = ({ value, level }) => {
               return (
                 <div className={styles.planetWrapper}>
                   <Character className={styles.character} />
-                  <ProgressBar
-                    containerClassName={styles.progressPlanet}
-                    value={value}
-                    isDot
-                  >
+                  <ProgressBar size={130} value={value} isDot>
                     <Planet />
                   </ProgressBar>
                 </div>

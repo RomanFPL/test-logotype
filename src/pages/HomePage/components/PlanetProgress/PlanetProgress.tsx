@@ -18,7 +18,7 @@ const PlanetProgress: React.FC<PlanetProgressProps> = ({
 }) => {
   return (
     <div className={styles.container}>
-      <ProgressBar value={progressValue} isDot>
+      <ProgressBar size={200} value={progressValue} isDot offsetX={-50}>
         <Planet level={level} />
         {isLabel && (
           <div className={styles.progress}>
