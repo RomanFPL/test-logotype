@@ -1,0 +1,43 @@
+{
+  "files": {
+    "main.css": "/test-logotype/static/css/main.1bc22764.css",
+    "main.js": "/test-logotype/static/js/main.11134d0e.js",
+    "static/js/787.a22d535b.chunk.js": "/test-logotype/static/js/787.a22d535b.chunk.js",
+    "static/media/background.svg": "/test-logotype/static/media/background.c1be3b888e482b1bbb10.svg",
+    "static/media/character.svg": "/test-logotype/static/media/character.b01532e309327c4cfdba26a8da30661f.svg",
+    "static/media/level4.svg": "/test-logotype/static/media/level4.2daaa57bd7263eb289cd9688e7e1bed2.svg",
+    "static/media/level3.svg": "/test-logotype/static/media/level3.ef25b4e746d1b7ee88317190eaf9a8cc.svg",
+    "static/media/level7.svg": "/test-logotype/static/media/level7.61e5337bb47e27c2be67a1bc8969b614.svg",
+    "static/media/level9.svg": "/test-logotype/static/media/level9.7a2c9369a0e3e9c65f579d4a0ee8d9c3.svg",
+    "static/media/level6.svg": "/test-logotype/static/media/level6.04a804b38c961dce4c421be581a3b437.svg",
+    "static/media/level2.svg": "/test-logotype/static/media/level2.e78354ba19d13952f7e8b55bc2827877.svg",
+    "static/media/level1.svg": "/test-logotype/static/media/level1.82fef163fd253a88e5520e5083c32556.svg",
+    "static/media/level8.svg": "/test-logotype/static/media/level8.b48d957f21f26350bb71d6fdca9e05ae.svg",
+    "static/media/level5.svg": "/test-logotype/static/media/level5.4ce0c63761c28e586e25efe8043346af.svg",
+    "static/media/abs1.png": "/test-logotype/static/media/abs1.95ef74a9b014d5baaecc.png",
+    "static/media/logo.svg": "/test-logotype/static/media/logo.e95bf50ce012345e696ffb188ab5373e.svg",
+    "static/media/courses.svg": "/test-logotype/static/media/courses.cea37e26e5e4687f7e1e4a7bcc5ceb46.svg",
+    "static/media/book.svg": "/test-logotype/static/media/book.6805d476c2e92348a5fa21f63e8bd458.svg",
+    "static/media/paper.svg": "/test-logotype/static/media/paper.290bbe4371de94528128a8eec1902181.svg",
+    "static/media/statistics.svg": "/test-logotype/static/media/statistics.22590b4a6b00b680a45ab8d8483fd241.svg",
+    "static/media/guideLine.svg": "/test-logotype/static/media/guideLine.2113ca4d9011637b07d0e523f0938961.svg",
+    "static/media/logout.svg": "/test-logotype/static/media/logout.10c406d630b6046fa24e428a4e472c6b.svg",
+    "static/media/home.svg": "/test-logotype/static/media/home.791e55f47291cbda0e3db4a101f51bc3.svg",
+    "static/media/user.svg": "/test-logotype/static/media/user.5198518ac2e6992fe3c1fb4bbfc74c3b.svg",
+    "index.html": "/test-logotype/index.html",
+    "static/media/folder.svg": "/test-logotype/static/media/folder.bc3f74b0cfae00dcf5e36f12609b101a.svg",
+    "static/media/bell.svg": "/test-logotype/static/media/bell.bff22cd5d951753cf5a889ec1c6e4746.svg",
+    "static/media/libraries.svg": "/test-logotype/static/media/libraries.841785034e1a8184326f44b090c2a932.svg",
+    "static/media/dots.svg": "/test-logotype/static/media/dots.631177909533f58d2f200a2a0230b109.svg",
+    "static/media/search.svg": "/test-logotype/static/media/search.30cf7d0ce002d0e79a3fe13ec6c3c6b4.svg",
+    "static/media/plus.svg": "/test-logotype/static/media/plus.621c213e41e0caeb797a12bb280b97a9.svg",
+    "static/media/arrowDown.svg": "/test-logotype/static/media/arrowDown.52d2b5b3830f69e9da6fdf218fe36eb8.svg",
+    "main.1bc22764.css.map": "/test-logotype/static/css/main.1bc22764.css.map",
+    "main.11134d0e.js.map": "/test-logotype/static/js/main.11134d0e.js.map",
+    "787.a22d535b.chunk.js.map": "/test-logotype/static/js/787.a22d535b.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1bc22764.css",
+    "static/js/main.11134d0e.js"
+  ]
+}
