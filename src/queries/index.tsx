@@ -35,10 +35,6 @@ const initData = {
   additions: { users: 12, pages: 3452, images: imgs },
 };
 
-const placeholder = {
-  data: [initData],
-};
-
 const useUserData = () => {
   const dispatch = useDispatch();
   const addUserData = (data: IUser) => dispatch(setUser(data));
@@ -55,7 +51,6 @@ const useUserData = () => {
           ...data.data[0],
         };
       },
-      placeholderData: placeholder,
       refetchInterval: 10000,
       retry: false,
       refetchOnWindowFocus: false,
