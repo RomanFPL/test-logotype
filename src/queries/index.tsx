@@ -23,7 +23,7 @@ const imgs = [
 
 const initData = {
   firstName: "Peter",
-  level: 5,
+  level: 6,
   progress: 40,
   id: 1,
   secondName: "g",
@@ -46,13 +46,14 @@ const useUserData = () => {
   const { data, isLoading } = useQuery(
     ["user", "id"],
     async () => {
-      return fetchUser("user");
+      // return fetchUser("user");
+      return null;
     },
     {
       select: (data) => {
         return {
           initData,
-          ...data.data[0],
+          // ...data.data[0],
         };
       },
       placeholderData: placeholder,
@@ -64,7 +65,7 @@ const useUserData = () => {
   );
 
   if (data && !isLoading) {
-    addUserData(data);
+    addUserData(placeholder.data[0]);
   }
 
   return { data, isLoading };

@@ -12,14 +12,16 @@
 
 .planetList {
     display: flex;
+    align-items: center;
     gap: 42px;
+    margin-top: 5%;
     padding: 0 30%;
 }
 
 .planetWrapper {
     position: relative;
-    width: 160px;
-    height: 160px;
+    width: 180px;
+    height: 180px;
 }
 
 .glassWrapper {

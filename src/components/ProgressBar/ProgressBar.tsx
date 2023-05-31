@@ -9,6 +9,7 @@ interface ProgressBarProps {
   offsetX?: number;
   size?: number;
   isExtended?: boolean;
+  scale?: number;
 }
 
 const dotPosition: { [key: number]: string } = {
@@ -21,8 +22,9 @@ const ProgressBar: React.FC<ProgressBarProps & React.PropsWithChildren> = ({
   isDot,
   children,
   size,
-  offsetX,
+  offsetX = 0,
   isExtended,
+  scale = 1,
 }) => {
   const rotation = (360 / 100) * value;
   const itemSize = size ? `${size}px` : undefined;
@@ -38,7 +40,7 @@ const ProgressBar: React.FC<ProgressBarProps & React.PropsWithChildren> = ({
         className={styles.svg}
         viewBox="0 0 100 100"
         xmlns="http://www.w3.org/2000/svg"
-        style={{ transform: `translateX(${offsetX}%)` }}
+        style={{ transform: `translateX(${offsetX}%) scale(${scale})` }}
       >
         <circle className={styles.circle} {...commonCircleProps} />
         <circle
@@ -60,7 +62,7 @@ const ProgressBar: React.FC<ProgressBarProps & React.PropsWithChildren> = ({
             [styles.extendedView]: isExtended,
           })}
           style={{
-            transform: `rotate(${rotation}deg)`,
+            transform: `rotate(${rotation}deg) scale(${scale})`,
             width: itemSize,
             height: itemSize,
           }}

@@ -13,6 +13,8 @@ interface PlanetSliderProps {
 const PlanetSlider: React.FC<PlanetSliderProps> = ({ progress, level }) => {
   const progressText = `${progress}% Completed`;
   const marginOffset = level * -140;
+  const doubleStep = level > 6 ? 0.04 : 0.01;
+  const scaleStep = 1 + level * doubleStep;
 
   return (
     <div className={styles.container}>
@@ -26,7 +28,13 @@ const PlanetSlider: React.FC<PlanetSliderProps> = ({ progress, level }) => {
               return (
                 <div key={idx} className={styles.planetWrapper}>
                   <Character className={styles.character} />
-                  <ProgressBar size={130} value={progress} isDot isExtended>
+                  <ProgressBar
+                    size={130}
+                    value={progress}
+                    isDot
+                    isExtended
+                    scale={scaleStep}
+                  >
                     <Planet />
                   </ProgressBar>
                 </div>
