@@ -3,6 +3,7 @@ import { Route, Routes } from "react-router-dom";
 import AuthenticatedLayout from "./layouts/AuthenticatedLayout";
 import HomePage from "./pages/HomePage/HomePage";
 import useUserData from "./queries/index";
+import getRoot from "./helper/index";
 
 const Root: React.FC = () => {
   // TODO add user verification
@@ -15,7 +16,7 @@ const Root: React.FC = () => {
     return (
       <AuthenticatedLayout>
         <Routes>
-          <Route path="/" element={<HomePage />} />
+          <Route path={getRoot("/")} element={<HomePage />} />
         </Routes>
       </AuthenticatedLayout>
     );

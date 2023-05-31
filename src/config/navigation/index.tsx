@@ -6,37 +6,38 @@ import { ReactComponent as LibrariesIcon } from "assets/icons/libraries.svg";
 import { ReactComponent as StatisticsIcon } from "assets/icons/statistics.svg";
 import { ReactComponent as UsersGuidelineIcon } from "assets/icons/guideLine.svg";
 import { ReactComponent as SignOutIcon } from "assets/icons/logout.svg";
+import getRoot from "helper/index";
 
 const navigation = [
   {
     icon: <HomeIcon />,
     title: "Home",
-    root: "/",
+    root: getRoot("/"),
     type: MenuTypes.DefaultItem,
   },
   {
     icon: <CoursesIcon />,
     title: "Courses",
-    root: "/courses",
+    root: getRoot("/courses"),
     type: MenuTypes.DefaultItem,
   },
   {
     icon: <LibrariesIcon />,
     title: "Libraries",
-    root: "/libraries",
+    root: getRoot("/libraries"),
     type: MenuTypes.DefaultItem,
   },
   {
     icon: <StatisticsIcon />,
     title: "Statistics",
-    root: "/statistics",
+    root: getRoot("/statistics"),
     type: MenuTypes.DefaultItem,
   },
   { type: MenuTypes.Divider },
   {
     icon: <UsersGuidelineIcon />,
     title: "Users guideline",
-    root: "/users-guideline",
+    root: getRoot("/users-guideline"),
     type: MenuTypes.DefaultItem,
   },
   {
