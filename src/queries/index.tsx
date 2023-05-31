@@ -47,7 +47,7 @@ const useUserData = () => {
     {
       select: (data) => {
         return {
-          initData,
+          ...initData,
           ...data.data[0],
         };
       },
