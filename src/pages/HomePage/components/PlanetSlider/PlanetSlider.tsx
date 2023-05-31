@@ -1,17 +1,17 @@
 import React from "react";
 import styles from "./PlanetSlider.module.css";
 import GlassLabel from "components/GlassLabel/GlassLabel";
-import { PlanetMap } from "../../../../config/constants/index";
+import { PlanetMap } from "config/constants/index";
 import ProgressBar from "components/ProgressBar/ProgressBar";
 import { ReactComponent as Character } from "assets/other/character.svg";
 
 interface PlanetSliderProps {
-  value: number;
+  progress: number;
   level: number;
 }
 
-const PlanetSlider: React.FC<PlanetSliderProps> = ({ value, level }) => {
-  const progressText = `${value}% Completed`;
+const PlanetSlider: React.FC<PlanetSliderProps> = ({ progress, level }) => {
+  const progressText = `${progress}% Completed`;
   const marginOffset = level * -140;
 
   return (
@@ -26,7 +26,7 @@ const PlanetSlider: React.FC<PlanetSliderProps> = ({ value, level }) => {
               return (
                 <div key={idx} className={styles.planetWrapper}>
                   <Character className={styles.character} />
-                  <ProgressBar size={130} value={value} isDot>
+                  <ProgressBar size={130} value={progress} isDot>
                     <Planet />
                   </ProgressBar>
                 </div>

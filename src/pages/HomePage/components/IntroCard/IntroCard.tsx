@@ -1,16 +1,18 @@
 import React from "react";
 import styles from "./IntroCard.module.css";
 import PlanetProgress from "../PlanetProgress/PlanetProgress";
-import { useSelector } from "react-redux";
-import { getUser } from "config/redux/selctors";
 
-interface IntroCardProps {}
+interface IntroCardProps {
+  firstName: string;
+  level: number;
+  progress: number;
+}
 
-const IntroCard: React.FC<IntroCardProps> = () => {
-  const { firstName, level, progress } = useSelector(getUser);
-
-  console.log(firstName);
-
+const IntroCard: React.FC<IntroCardProps> = ({
+  firstName,
+  level,
+  progress,
+}) => {
   const leftTotReach = `${100 - progress}% to reach next level`;
   return (
     <div className={styles.introContainer}>

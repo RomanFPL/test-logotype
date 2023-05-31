@@ -3,6 +3,24 @@ import { fetchUser } from "../api/index";
 import { IUser, setUser } from "../config/redux/slices/user";
 import { useDispatch } from "react-redux";
 
+import abs2 from "assets/images/abs2.png";
+import abs1 from "assets/images/abs1.png";
+
+const imgs = [
+  abs2,
+  abs1,
+  abs1,
+  abs2,
+  abs2,
+  abs1,
+  abs1,
+  abs2,
+  abs2,
+  abs1,
+  abs1,
+  abs2,
+];
+
 const useUserData = () => {
   const dispatch = useDispatch();
   const addUserData = (data: IUser) => dispatch(setUser(data));
@@ -14,7 +32,13 @@ const useUserData = () => {
     },
     {
       select: (data) => {
-        return data.data[0];
+        return {
+          ...data.data[0],
+          courses: { total: 12, value: 10 },
+          folder: { total: 15, value: 11 },
+          book: { total: 15, value: 11 },
+          additions: { users: 12, pages: 3452, images: imgs },
+        };
       },
       refetchInterval: 10000,
       retry: false,

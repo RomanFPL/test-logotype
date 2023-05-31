@@ -8,7 +8,7 @@ import { ReactComponent as Folder } from "assets/icons/folder.svg";
 
 interface AchievementItemProps {
   type: "book" | "folder" | "courses";
-  currentValue: number;
+  value: number;
   total: number;
   text: string;
 }
@@ -17,7 +17,7 @@ const IconsMap = { courses: Courses, book: Book, folder: Folder };
 
 const AchievementItem: React.FC<AchievementItemProps> = ({
   type,
-  currentValue,
+  value,
   total,
   text,
 }) => {
@@ -29,7 +29,7 @@ const AchievementItem: React.FC<AchievementItemProps> = ({
       </ProgressBar>
       <div className={styles.textWrapper}>
         <div className={styles.valueWrapper}>
-          <span className={styles.current}>{currentValue}</span>
+          <span className={styles.current}>{value}</span>
           <span className={styles.total}>/{total}</span>
         </div>
         <div className={styles.text}>{text}</div>

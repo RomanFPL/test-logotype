@@ -1,5 +1,16 @@
 import { createSlice } from "@reduxjs/toolkit";
 
+interface IAchievement {
+  value: number;
+  total: number;
+}
+
+interface IAdditions {
+  users: number;
+  pages: number;
+  images: string[];
+}
+
 export interface IUser {
   id: number;
   firstName: string;
@@ -9,6 +20,10 @@ export interface IUser {
   role: string;
   imgUrl: string;
   language: string;
+  courses: IAchievement;
+  book: IAchievement;
+  folder: IAchievement;
+  additions: IAdditions;
 }
 
 const initialState: IUser = {} as IUser;
