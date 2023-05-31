@@ -8,7 +8,13 @@ interface ProgressBarProps {
   isDot?: boolean;
   offsetX?: number;
   size?: number;
+  isExtended?: boolean;
 }
+
+const dotPosition: { [key: number]: string } = {
+  200: "16px",
+  130: "8px",
+};
 
 const ProgressBar: React.FC<ProgressBarProps & React.PropsWithChildren> = ({
   value,
@@ -16,6 +22,7 @@ const ProgressBar: React.FC<ProgressBarProps & React.PropsWithChildren> = ({
   children,
   size,
   offsetX,
+  isExtended,
 }) => {
   const rotation = (360 / 100) * value;
   const itemSize = size ? `${size}px` : undefined;
@@ -47,15 +54,19 @@ const ProgressBar: React.FC<ProgressBarProps & React.PropsWithChildren> = ({
         />
       </svg>
       {children}
-      {isDot && (
+      {isDot && size && (
         <div
-          className={styles.dotWrapper}
+          className={cn(styles.dotWrapper, {
+            [styles.extendedView]: isExtended,
+          })}
           style={{
             transform: `rotate(${rotation}deg)`,
             width: itemSize,
             height: itemSize,
           }}
-        />
+        >
+          <div className={styles.point} style={{ top: dotPosition[size] }} />
+        </div>
       )}
     </div>
   );

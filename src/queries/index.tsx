@@ -21,6 +21,24 @@ const imgs = [
   abs2,
 ];
 
+const initData = {
+  firstName: "Peter",
+  level: 5,
+  progress: 40,
+  id: 1,
+  secondName: "g",
+  role: "admin",
+  imgUrl: "",
+  courses: { total: 12, value: 10 },
+  folder: { total: 15, value: 11 },
+  book: { total: 15, value: 11 },
+  additions: { users: 12, pages: 3452, images: imgs },
+};
+
+const placeholder = {
+  data: [initData],
+};
+
 const useUserData = () => {
   const dispatch = useDispatch();
   const addUserData = (data: IUser) => dispatch(setUser(data));
@@ -33,13 +51,11 @@ const useUserData = () => {
     {
       select: (data) => {
         return {
+          initData,
           ...data.data[0],
-          courses: { total: 12, value: 10 },
-          folder: { total: 15, value: 11 },
-          book: { total: 15, value: 11 },
-          additions: { users: 12, pages: 3452, images: imgs },
         };
       },
+      placeholderData: placeholder,
       refetchInterval: 10000,
       retry: false,
       refetchOnWindowFocus: false,

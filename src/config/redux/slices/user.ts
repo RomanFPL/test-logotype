@@ -19,7 +19,6 @@ export interface IUser {
   progress: number;
   role: string;
   imgUrl: string;
-  language: string;
   courses: IAchievement;
   book: IAchievement;
   folder: IAchievement;
